@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class MenuOpciones : MonoBehaviour
 {
     [SerializeField] private GameObject menuPausa;
-    private bool juegoPausado = false;
+    [SerializeField] private bool juegoPausado = false;
+    [SerializeField] private float ti;
 
     private void Update()
     {
+        ti = Time.timeScale;
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (juegoPausado == true)
@@ -38,11 +40,13 @@ public class MenuOpciones : MonoBehaviour
 
     public void AbrirMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
 
     public void Reiniciar()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
     }
 }

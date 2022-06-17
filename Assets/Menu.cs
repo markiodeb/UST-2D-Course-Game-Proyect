@@ -21,6 +21,10 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
+    public void Eventos()
+    {
+        SceneManager.LoadScene(4);
+    }
     public void Salir()
     {
         Debug.Log("Salimos del game");

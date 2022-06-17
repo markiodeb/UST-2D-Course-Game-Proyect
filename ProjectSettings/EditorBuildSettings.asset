@@ -10,11 +10,17 @@ EditorBuildSettings:
     guid: 45a30f5d4c86b8347be86a41c34d5382
   - enabled: 1
     path: Assets/Scenes/PatrullajeSonido.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 6baa61339ff709441b0b7d324953a58a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/DisparosHP.unity
     guid: 530121ec832f8724c8f5dfc202eba2a5
   - enabled: 1
     path: Assets/Scenes/Efectos.unity
     guid: 45ff66bac4eb91a4992cdae1f278403b
+  - enabled: 1
+    path: Assets/Scenes/Eventos.unity
+    guid: a4957038b035b3e46bdaa9bf19b71f0d
   m_configObjects: {}

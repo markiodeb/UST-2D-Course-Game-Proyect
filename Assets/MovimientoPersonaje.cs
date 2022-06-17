@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,8 @@ public class MovimientoPersonaje : MonoBehaviour
 
     [Header("Animacion")]
     private Animator animator;
+
+    public event EventHandler OnJump;
 
     private void Start()
     {
@@ -70,6 +73,7 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             rb2d.AddForce(new Vector2(rb2d.velocity.x, fuerzaSalto));
             enSuelo = false;
+            OnJump?.Invoke(this, EventArgs.Empty);
         }
     }
 

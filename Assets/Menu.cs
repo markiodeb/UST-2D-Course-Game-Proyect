@@ -25,6 +25,11 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(4);
     }
+
+    public void MaquinaEstados()
+    {
+        SceneManager.LoadScene(5);
+    }
     public void Salir()
     {
         Debug.Log("Salimos del game");

@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Eventos.unity
     guid: a4957038b035b3e46bdaa9bf19b71f0d
+  - enabled: 1
+    path: Assets/Scenes/MaquinaEstados.unity
+    guid: 90b9fa301ecd98a46a7a0d5159fd61d7
   m_configObjects: {}

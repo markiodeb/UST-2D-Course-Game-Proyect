@@ -5,13 +5,11 @@ using UnityEngine;
 public class Spikes : MonoBehaviour
 {
     private Combate combate;
-    private Vector3 posicion;
 
     private void Start()
     {
         combate = GameObject.FindGameObjectWithTag("Player").GetComponent<Combate>();
         combate.OnTakeDamage += DestruirSpikes;
-        posicion = gameObject.transform.position;
     }
 
     private void DestruirSpikes(object sender, Combate.OnTakeDamageEventArgs e)
